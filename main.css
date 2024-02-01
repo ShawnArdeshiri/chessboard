@@ -1,0 +1,101 @@
+/* Start by defining grid-template-columns on the container */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8,50px);
+  grid-template-rows: repeat(8,50px);
+  gap:1px;
+  border: 1px solid #333;
+}
+
+.chessboard section {
+  height: 100%;
+  width:100%;
+  box-sizing: border-box;
+}
+
+article:nth-child(odd) {
+  background-color:white;
+}
+
+article:nth-child(9n+1) {
+  background-color: black;
+}
+
+article:int-child(9n+5) {
+  background-color: black;
+}
+
+article:nth-child(3n) {
+  background-color: black;
+}
+
+article:nth-child(9n-1) {
+  background-color: black;
+}
+
+article:nth-child(9n) {
+  background-color: white;
+}
+
+article:nth-child(57n) {
+  background-color: white;
+}
+
+article:nth-child(58) {
+  background-color: black;
+}
+
+
+article:nth-child(23) {
+  background-color: black;
+}
+
+article:nth-child(15) {
+  background-color: white;
+}
+
+article:nth-child(14) {
+  background-color: black;
+}
+
+article:nth-child(5) {
+  background-color: black;
+}
+
+article:nth-child(7) {
+  background-color: black;
+}
+
+article:nth-child(6) {
+  background-color: white;
+}
+
+article:nth-child(8) {
+  background-color: white;
+}
+
+article:nth-child(49) {
+  background-color: black;
+}
+
+article:nth-child(32) {
+  background-color: black;
+}
+
+article:nth-child(16) {
+  background-color: black;
+}
+
+
+article:nth-child(24) {
+  background-color: white;
+}
+
